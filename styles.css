@@ -1,6 +1,37 @@
 .title {
   font-family: 'Roboto', sans-serif;
 }
-p {
-  color: red;
+.body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.logo,.menu {
+  Display: inline-block;
+}
+.menu__item {
+  padding: 0 13px;
+}
+. "wrapper"{
+  margin: auto;
+  width: 80%;
+}
+.logo {
+  padding: 40px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__item:last-child {
+  padding-right: 0;
+}
+.main-content__title {
+  padding-top: 246px;
 }
