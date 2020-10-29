@@ -4,33 +4,34 @@
 .body {
   margin: 0;
 }
-.header {}
+.header {
   display: flex;
   justify-content: space-between;
-.wrapper {}
+}
+.wrapper {
   margin: auto;
   width: 80%;
 }
-.logo,.menu {}
-  display: inline-block;
+.logo,.menu {
+  Display: inline-block;
 }
-.menu__item {}
+.menu__item {
   padding: 0 13px;
 }
-. "wrapper"{}
+. "wrapper"{
   margin: auto;
   width: 80%;
 }
-.logo {}
+.logo {
   padding: 40px 0;
 }
-.menu {}
+.menu {
   display: flex;
   align-items: center;
 }
-.menu__item:last-child {}
+.menu__item:last-child {
   padding-right: 0;
 }
-.main-content__title {}
+.main-content__title {
   padding-top: 246px;
 }
