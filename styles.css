@@ -6,10 +6,12 @@
 }
 .header {
   display: flex;
+
   justify-content: space-between;
 }
 .wrapper {
   margin: auto;
+
   width: 80%;
 }
 .logo,.menu {
@@ -20,6 +22,7 @@
 }
 . "wrapper"{
   margin: auto;
+
   width: 80%;
 }
 .logo {
@@ -27,6 +30,7 @@
 }
 .menu {
   display: flex;
+
   align-items: center;
 }
 .menu__item:last-child {
