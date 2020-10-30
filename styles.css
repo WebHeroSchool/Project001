@@ -33,7 +33,7 @@
 
   align-items: center;
 }
-.menu__item:last-child{
+.menu__item:last-child {
   padding-right: 0;
 }
 .main-content__title {
