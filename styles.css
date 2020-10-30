@@ -1,15 +1,17 @@
 .title {
   font-family: 'Roboto', sans-serif;
 }
-body{
+.body{
   margin: 0;
 }
 .header{
   display: flex;
+
   justify-content: space-between;
 }
 .wrapper{
   margin: auto;
+
   width: 80%;
 }
 .logo,.menu {
@@ -20,6 +22,7 @@ body{
 }
 . "wrapper"{
   margin: auto;
+
   width: 80%;
 }
 .logo {
@@ -27,6 +30,7 @@ body{
 }
 .menu {
   display: flex;
+  
   align-items: center;
 }
 .menu__item:last-child {
