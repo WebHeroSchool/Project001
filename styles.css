@@ -1,14 +1,14 @@
 .title {
   font-family: 'Roboto', sans-serif;
 }
-body {
+body{
   margin: 0;
 }
-.header {
+.header{
   display: flex;
   justify-content: space-between;
 }
-.wrapper {
+.wrapper{
   margin: auto;
   width: 80%;
 }
