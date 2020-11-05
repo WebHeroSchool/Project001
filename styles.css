@@ -18,6 +18,7 @@
   Display: inline-block;
 }
 .menu__item {
+  font-family: 'Roboto', sans-serif;
   padding: 0 13px;
 }
 .logo {
