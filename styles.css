@@ -18,12 +18,24 @@
   Display: inline-block;
 }
 .menu__item {
-  font-family: 'Roboto', sans-serif;
-  padding: 0 13px;
+  position: relative;
+  font: 500 18px/21px 'Roboto', sans-serif, arial, helvetica;
+  margin-right: 26px;
+  color: #000;
+  text-decoration: none;
+}
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  content: ";
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
 }
 .logo {
   position: relative;
-  padding: 40px 0;
+  padding: 31px 0;
   padding-left: 44px;
   font: bold 24px/31px 'pt_serif', arial, helvetica, sans-serif;
 }
@@ -54,8 +66,17 @@
   align-items: center;
 }
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 .main-content__title {
-  padding-top: 246px;
+  padding-top: 166px;
+  font-size: 66px;
+  font-family: 'pt_serifbold';
+  width: calc(2em * 5);
+}
+.main-content__subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  width: 455px;
+  left: calc(50% - 455px/2 - 537.5px);
 }
