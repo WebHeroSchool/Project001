@@ -24,6 +24,7 @@
   color: #000;
   text-decoration: none;
 }
+
 .menu__item_active::after {
   position: absolute;
   display: block;
@@ -34,18 +35,16 @@
   background: #0056ec;
 }
 .logo {
-  padding-left: 42px;
   position: relative;
   padding: 32px 0;
   padding-left: 42px;
-  font: bold 24px/31px 'pt_serif', arial, helvetica, sans-serif;
+  font: 700 24px/31px 'pt_serif', arial, helvetica, sans-serif;
   letter-spacing: 0.9px;
-  weight: 700;
 }
 
 .logo__circle {
   position: absolute;
-  left: 0px;
+  left: 1px;
   top: 48%;
   transform: translateY(-50%);
   width: 28px;
@@ -74,12 +73,13 @@
 .main-content__title {
   padding-top: 166px;
   font-size: 66px;
-  font-family: 'pt_serifbold';
+  font-family:'pt_serifbold';
   width: calc(2em * 5);
 }
+
 .main-content__subtitle {
   font-size: 22px;
   line-height: 26px;
   width: 455px;
-  left: calc(50% - 455px/2 - 537.5px);
+  left: calc(50% - 455px /2 - 537.5px);
 }
