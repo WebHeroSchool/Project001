@@ -27,23 +27,26 @@
 .menu__item_active::after {
   position: absolute;
   display: block;
-  content: ";
+  content: "";
   left: 0;
   width: 100%;
   height: 3px;
   background: #0056ec;
 }
 .logo {
+  padding-left: 42px;
   position: relative;
-  padding: 31px 0;
-  padding-left: 44px;
+  padding: 32px 0;
+  padding-left: 42px;
   font: bold 24px/31px 'pt_serif', arial, helvetica, sans-serif;
+  letter-spacing: 0.9px;
+  weight: 700;
 }
 
 .logo__circle {
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 0px;
+  top: 48%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
