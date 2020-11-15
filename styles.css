@@ -73,7 +73,6 @@
 .main-content__title {
   padding-top: 166px;
   font-size: 66px;
-  font-family:'pt_serifbold';
   width: calc(2em * 5);
 }
 
@@ -81,5 +80,5 @@
   font-size: 22px;
   line-height: 26px;
   width: 455px;
-  left: calc(50% - 455px /2 - 537.5px);
+  left: calc(50% - 455px / 2 - 537.5px);
 }
