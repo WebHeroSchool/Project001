@@ -23,7 +23,7 @@
   margin-right: 28px;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   top: 2px;
 }
 
@@ -36,7 +36,7 @@
   height: 3px;
   background: #0056ec;
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 .logo {
   position: relative;
@@ -74,10 +74,13 @@
 .menu__item:last-child {
   margin-right: 0;
 }
+
 .menu__item:hover {
   opacity: 0.5;
 }
-.menu__item:hover:after,.menu__item_active:after {
+
+.menu__item:hover:after,
+.menu__item_active:after {
   opacity: 1;
   width: 100%;
 }
