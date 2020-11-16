@@ -20,12 +20,14 @@
 .menu__item {
   position: relative;
   font: 500 18px/21px 'Roboto', sans-serif, arial, helvetica;
-  margin-right: 26px;
+  margin-right: 28px;
   color: #000;
   text-decoration: none;
+  transition: opacity .5s;
+  top: 2px;
 }
 
-.menu__item_active::after {
+.menu__item:after {
   position: absolute;
   display: block;
   content: "";
@@ -33,6 +35,8 @@
   width: 100%;
   height: 3px;
   background: #0056ec;
+  opacity: 0;
+  transition: opacity .5s;
 }
 .logo {
   position: relative;
@@ -69,6 +73,13 @@
 }
 .menu__item:last-child {
   margin-right: 0;
+}
+.menu__item:hover {
+  opacity: 0.5;
+}
+.menu__item:hover:after,.menu__item_active:after {
+  opacity: 1;
+  width: 100%;
 }
 .main-content__title {
   padding-top: 166px;
