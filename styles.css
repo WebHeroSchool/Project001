@@ -84,6 +84,7 @@
   opacity: 1;
   width: 100%;
 }
+
 .main__title {
   margin: 0 0 40px 0;
   font: 700 85px/66px 'pt_serif', arial, helvetica, sans-serif;
@@ -104,6 +105,7 @@
   color: 000;
   height: 52px;
 }
+
 .main {
   padding: 0 63% 100px 0;
   background: top right no-repeat url(img/img.svg);
@@ -112,13 +114,14 @@
 .main__button {
   display: inline-block;
   padding: 14px 16px;
-  background: #0056EC;
+  background: #0056ec;
   font: 14px/16px 'Roboto', sans-serif, arial, helvetica;
   text-decoration: none;
   color: #fff;
   border-radius: 4px;
   transition: opacity 0.5s;
 }
+
 .main__button:hover {
   opacity: 0.5;
 }
