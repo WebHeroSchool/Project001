@@ -86,18 +86,19 @@
 }
 
 .main__title {
-  margin: 0 0 40px 0;
+  letter-spacing: 2.4px;
+  word-spacing: 5px;
+  margin: 0 0 35px 0;
   padding-top: 72px;
   font: 1070 85px/66px 'pt_serif', arial, helvetica, sans-serif;
   font-size: 66px;
   width: calc(2em * 5);
   align-items: center;
   line-height: 88px;
-  letter-spacing: 3.9px;
 }
 
 .main__subtitle {
-  margin: 0 0 41px 0;
+  margin: 0 0 40px 0;
   font: 18px/26px 'Roboto', sans-serif, arial, helvetica;
   font-size: 22px;
   line-height: 26px;
@@ -112,15 +113,16 @@
 }
 
 .main__button {
+  letter-spacing: 0.1px;
   display: inline-block;
-  padding: 11px 16px;
+  padding: 9px 26px;
   background: #0056ec;
   font: 34px/38px 'Roboto', sans-serif, arial, helvetica;
   text-decoration: none;
   color: #fff;
   border-radius: 4px;
   transition: opacity 0.5s;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main__button:hover {
@@ -129,4 +131,11 @@
 
 .main__title-text_highlight {
   background: #ecf3ff;
+  letter-spacing: 3.6px;
+  word-spacing: 2px;
+}
+
+.main__title-text_highlight1 {
+  background: #ecf3ff;
+  letter-spacing: 2.7px;
 }
