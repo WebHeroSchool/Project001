@@ -6,7 +6,7 @@
 }
 .header {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   justify-content: space-between;
 }
 .wrapper {
@@ -87,39 +87,40 @@
 
 .main__title {
   margin: 0 0 40px 0;
-  font: 700 85px/66px 'pt_serif', arial, helvetica, sans-serif;
+  padding-top: 72px;
+  font: 1070 85px/66px 'pt_serif', arial, helvetica, sans-serif;
   font-size: 66px;
   width: calc(2em * 5);
-  top: 318px;
   align-items: center;
   line-height: 88px;
-  letter-spacing: 2.9px;
+  letter-spacing: 3.9px;
 }
 
 .main__subtitle {
-  margin-top: 0 0 41px 0;
-  font: 18px/21px 'Roboto', sans-serif, arial, helvetica;
+  margin: 0 0 41px 0;
+  font: 18px/26px 'Roboto', sans-serif, arial, helvetica;
   font-size: 22px;
   line-height: 26px;
-  width: 455px;
-  color: 000;
+  width: 425px;
+  color: #000;
   height: 52px;
 }
 
 .main {
-  padding: 0 63% 100px 0;
+  padding: 0 63% 300px 0;
   background: top right no-repeat url(img/img.svg);
 }
 
 .main__button {
   display: inline-block;
-  padding: 14px 16px;
+  padding: 11px 16px;
   background: #0056ec;
-  font: 14px/16px 'Roboto', sans-serif, arial, helvetica;
+  font: 34px/38px 'Roboto', sans-serif, arial, helvetica;
   text-decoration: none;
   color: #fff;
   border-radius: 4px;
   transition: opacity 0.5s;
+  font-size: 20px;
 }
 
 .main__button:hover {
