@@ -90,11 +90,11 @@
   word-spacing: 5px;
   margin: 0 0 35px 0;
   padding-top: 72px;
-  font: 1070 85px/66px 'pt_serif', arial, helvetica, sans-serif;
+  font-family: 'pt_serif', arial, helvetica, sans-serif;
   font-size: 66px;
   width: calc(2em * 5);
   align-items: center;
-  line-height: 88px;
+  line-height: 87px;
 }
 
 .main__subtitle {
