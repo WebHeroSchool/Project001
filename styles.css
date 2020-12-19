@@ -6,7 +6,7 @@
 }
 .header {
   display: flex;
-
+  margin-bottom: 140px;
   justify-content: space-between;
 }
 .wrapper {
@@ -20,12 +20,14 @@
 .menu__item {
   position: relative;
   font: 500 18px/21px 'Roboto', sans-serif, arial, helvetica;
-  margin-right: 26px;
+  margin-right: 28px;
   color: #000;
   text-decoration: none;
+  transition: opacity 0.5s;
+  top: 2px;
 }
 
-.menu__item_active::after {
+.menu__item::after {
   position: absolute;
   display: block;
   content: "";
@@ -33,6 +35,8 @@
   width: 100%;
   height: 3px;
   background: #0056ec;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .logo {
   position: relative;
@@ -70,15 +74,68 @@
 .menu__item:last-child {
   margin-right: 0;
 }
-.main-content__title {
-  padding-top: 166px;
-  font-size: 66px;
-  width: calc(2em * 5);
+
+.menu__item:hover {
+  opacity: 0.5;
 }
 
-.main-content__subtitle {
-  font-size: 22px;
+.menu__item:hover::after,
+.menu__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.main__title {
+  letter-spacing: 2.4px;
+  word-spacing: 5px;
+  margin: 0 0 35px 0;
+  padding-top: 72px;
+  font-family: 'pt_serif', arial, helvetica, sans-serif;
+  font-size: 64px;
+  width: calc(2em * 5);
+  align-items: center;
+  line-height: 87px;
+}
+
+.main__subtitle {
+  margin: 0 0 40px 0;
+  font: 18px/26px 'Roboto', sans-serif, arial, helvetica;
+  font-size: 21.6px;
   line-height: 26px;
-  width: 455px;
-  left: calc(50% - 455px / 2 - 537.5px);
+  width: 425px;
+  color: #000;
+  height: 52px;
+}
+
+.main {
+  padding: 0 63% 300px 0;
+  background: top right no-repeat url(img/img.svg);
+}
+
+.main__button {
+  letter-spacing: 0.1px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0056ec;
+  font: 34px/38px 'Roboto', sans-serif, arial, helvetica;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+  font-size: 18px;
+}
+
+.main__button:hover {
+  opacity: 0.5;
+}
+
+.main__title-text_highlight {
+  background: #ecf3ff;
+  letter-spacing: 3.6px;
+  word-spacing: 2px;
+}
+
+.main__title-text_highlight1 {
+  background: #ecf3ff;
+  letter-spacing: 2.7px;
 }
