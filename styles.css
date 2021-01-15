@@ -139,12 +139,12 @@
   letter-spacing: 2.7px;
 }
 
- @media (max-width: 768px){
+@media (max-width: 768px) {
   .menu {
     display: none;
 }
 
- .logo__circle {
+  .logo__circle {
     position: absolute;
     left: -20px;
     top: 48%;
@@ -161,7 +161,7 @@
     background: #c8dbfb;
  }
 
- .header{
+  .header {
     margin-bottom: 28px;
  }
 
