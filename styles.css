@@ -141,7 +141,8 @@
 
 @media (max-width: 768px) {
   .menu {
-    display: none;}
+    display: none;
+}
 
   .logo__circle {
     position: absolute;
@@ -152,7 +153,7 @@
     height: 28px;
     border-radius: 50%;
     opacity: 0.7;
- }
+}
 
   .logo__circle_color_blue {
     left: -12px;
