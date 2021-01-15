@@ -138,3 +138,55 @@
   background: #ecf3ff;
   letter-spacing: 2.7px;
 }
+
+@media(max-width:768px){
+  .menu{
+    display: none;
+ }
+
+ .logo__circle {
+   position: absolute;
+   left: -20px;
+   top: 48%;
+   transform: translateY(-50%);
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   opacity: 0.7;
+ }
+
+ .logo__circle_color_blue {
+   left: -12px;
+   top: 59%;
+   background: #c8dbfb;
+ }
+
+  .header{
+    margin-bottom: 28px;
+ }
+
+.hidden-text {
+  display: none;
+}
+
+.main{
+    padding: 74% 0 0;
+    background-size: 94%;
+    background-position: top center;
+  }
+
+  .main__title {
+    margin-bottom: 44px;
+    font: bold 30px/39px 'pt_serif', arial, helvetica, sans-serif;
+  }
+
+
+.main__subtitle {
+  margin-bottom: 25px;
+  font: 500 16px/19px 'Roboto', sans-serif, arial, helvetica;
+}
+
+.main__button {
+  font: 500 14px/16px 'Roboto', sans-serif, arial, helvetica;
+}
+}
