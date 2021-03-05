@@ -1,0 +1,183 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no"
+  <title>Project</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+      width: 100%;
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      /* background-color: #e4fc47; */
+    }
+  </style>
+</head>
+<body>
+  <h1>Just a Game</h1>
+  <canvas id="mycanvas" width="640" height="360" ></canvas>
+  <script>
+
+window.addEventListener('load', function(){
+
+    let GAME_WIDTH = 640;
+    let GAME_HEIGHT = 360;
+
+    let gameLive = true;
+
+      let enemies = [
+        { x:100,
+          y:100,
+          speedY: 1,
+          w:40,
+          h:40
+        },
+        { x:180,
+          y:100,
+          speedY: 10,
+          w:40,
+          h:40
+        },
+        { x:260,
+          y:100,
+          speedY: 2,
+          w:40,
+          h:40
+        },
+        { x:380,
+          y:100,
+          speedY: 1,
+          w:40,
+          h:40
+        },
+        { x:450,
+          y:100,
+          speedY: 2,
+          w:40,
+          h:40
+        },
+        { x:500,
+          y:100,
+          speedY: 1,
+          w:40,
+          h:40
+        }
+      ];
+
+      let player = {
+        x:10,
+        y:160,
+        speedX:9,
+        w:40,
+        h:40,
+        isMoving:false
+       };
+
+       let goal = {
+         x:580,
+         y:160,
+         w:50,
+         h:40
+       }
+       let sprites = {};
+
+       let movePlayer = function(){
+        player.isMoving = true;
+      };
+
+      let stopPlayer = function(){
+        player.isMoving = false;
+      };
+      let canvas = document.getElementById("mycanvas");
+      let ctx = canvas.getContext("2d");
+
+
+      canvas.addEventListener("mousedown", movePlayer);
+      canvas.addEventListener("mouseup", stopPlayer);
+      canvas.addEventListener('touchstart', movePlayer);
+      canvas.addEventListener('touchend', stopPlayer);
+
+      let load = function() {
+        sprites.player = new Image();
+        sprites.player.src = '/Users/matthewkuzniatsov/Desktop/001project/img/hero.png';
+
+        sprites.background = new Image();
+        sprites.background.src = '/Users/matthewkuzniatsov/Desktop/001project/img/floor.png';
+
+        sprites.enemy = new Image();
+        sprites.enemy.src = '/Users/matthewkuzniatsov/Desktop/001project/img/enemy.png';
+
+        sprites.goal = new Image();
+        sprites.goal.src = '/Users/matthewkuzniatsov/Desktop/001project/img/chest.png';
+      };
+
+    let update = function() {
+
+     if(chekCollision(player, goal)){
+      gameLive = false;
+      alert ('You Win!!!');
+     }
+      //Player
+      if(player.isMoving) {
+           player.x = player.x + player.speedX;
+         }
+      //Enemy
+      let i = 0;
+      let n = enemies.length;
+
+enemies.forEach(function(element, index){
+  if(chekCollision(player, element)){
+    //Stop
+    gameLive = false;
+
+    alert("Game Over!!!");
+      window.location = "";
+    }
+  element.y += element.speedY;
+  if(element.y <= 10) {
+        element.y = 10;
+        //element.speedY = element.speedY * -1;
+        element.speedY *= -1;
+      }
+      else if(element.y >= GAME_HEIGHT - 50) {
+        element.y = GAME_HEIGHT - 50;
+        element.speedY *= -1;
+      }
+   });
+    };
+    let draw = function(){
+      ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
+      //background
+     ctx.drawImage(sprites.background, 0, 0);
+      //Объект игрока
+      ctx.drawImage(sprites.player, player.x, player.y);
+      //Объект врагов
+      enemies.forEach(function(element,index){
+      ctx.drawImage(sprites.enemy, element.x, element.y);
+
+      ctx.drawImage (sprites.goal, goal.x, goal.y);
+     });
+
+
+     };
+      let step = function() {
+
+        update();
+        draw();
+        if(gameLive){
+          window.requestAnimationFrame(step);
+      }
+       };
+
+       let chekCollision = function(rect1, rect2){
+         let closeOnWidth= Math.abs(rect1.x - rect2.x) <= Math.abs(rect1.w, rect2.w);
+         let closeOnHeight = Math.abs(rect1.y - rect2.y) <= Math.abs(rect1.h, rect2.h);
+         return closeOnHeight && closeOnWidth;
+         }
+       load();
+       step();
+      });
+  </script>
+</body>
+</html>
